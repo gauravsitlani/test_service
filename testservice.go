@@ -84,7 +84,7 @@ func sendRequest() {
 }
 
 func getMyService() {
-	requester := "http://127.0.0.1:8080/nodes/" + myID + "/services"
+	requester := "http://127.0.0.1:8080/nodes/" + myID
 	resp, err := http.Get(requester)
 	log.Println(requester)
 	if err != nil {
